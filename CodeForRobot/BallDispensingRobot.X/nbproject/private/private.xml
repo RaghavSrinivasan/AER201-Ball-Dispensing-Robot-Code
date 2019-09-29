@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/menu.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/I2C.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/EEPROM.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/data.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/menu.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/I2C.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/EEPROM.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/BallDispensingRobot.X/motion.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/UART_PIC.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/motion.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/BallDispensingRobot.X/SPI_PIC.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/main.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/GLCD.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/sensors.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/UART_PIC.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/lcd.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/sensors.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/configBits.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/BallDispensingRobot.X/SPI_PIC.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/data.c</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/RTC.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/SPI_PIC.h</file>
+            <file>file:/C:/Users/srira/Documents/Raghav%20Uni/AER201/CodeForRobot/BallDispensingRobot.X/RTC.c</file>
+        </group>
+    </open-files>
+</project-private>

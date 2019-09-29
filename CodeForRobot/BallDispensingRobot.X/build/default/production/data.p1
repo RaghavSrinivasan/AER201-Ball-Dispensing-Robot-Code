@@ -1,0 +1,204 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"12 data.c
+[; ;data.c: 12: volatile canister cans[10];
+[c E145 0 1 .. ]
+[n E145 direction Left Right  ]
+"15 ./data.h
+[; ;./data.h: 15: struct canister{
+[s S6 `i 1 `E145 1 `f 1 `a 1 `a 1 ]
+[n S6 canister id facing distance status ballDeposited ]
+"12 data.c
+[; ;data.c: 12: volatile canister cans[10];
+[v _cans `VS6 ~T0 @X0 -> 10 `i e ]
+"13
+[; ;data.c: 13: volatile int numCans;
+[v _numCans `Vi ~T0 @X0 1 e ]
+"14
+[; ;data.c: 14: volatile int numBalls;
+[v _numBalls `Vi ~T0 @X0 1 e ]
+"17
+[; ;data.c: 17: void initCanisters(void)
+[v _initCanisters `(v ~T0 @X0 1 ef ]
+"18
+[; ;data.c: 18: {
+{
+[e :U _initCanisters ]
+[f ]
+"19
+[; ;data.c: 19:     int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"20
+[; ;data.c: 20:     for (i = 0; i < 10; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 10 `i 8  ]
+[e $U 9  ]
+[e :U 8 ]
+"21
+[; ;data.c: 21:     {
+{
+"22
+[; ;data.c: 22:         (cans[i]).id = 0;
+[e = . *U + &U _cans * -> -> _i `ui `ux -> -> # *U &U _cans `ui `ux 0 -> 0 `i ]
+"23
+[; ;data.c: 23:         (cans[i]).facing = Left;
+[e = . *U + &U _cans * -> -> _i `ui `ux -> -> # *U &U _cans `ui `ux 1 . `E145 0 ]
+"24
+[; ;data.c: 24:         (cans[i]).distance = 0;
+[e = . *U + &U _cans * -> -> _i `ui `ux -> -> # *U &U _cans `ui `ux 2 -> -> 0 `i `f ]
+"25
+[; ;data.c: 25:         (cans[i]).status = 0;
+[e = . *U + &U _cans * -> -> _i `ui `ux -> -> # *U &U _cans `ui `ux 3 -> -> 0 `i `a ]
+"26
+[; ;data.c: 26:         (cans[i]).ballDeposited = 0;
+[e = . *U + &U _cans * -> -> _i `ui `ux -> -> # *U &U _cans `ui `ux 4 -> -> 0 `i `a ]
+"27
+[; ;data.c: 27:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 10 `i 8  ]
+[e :U 9 ]
+}
+"28
+[; ;data.c: 28:     numCans = 0;
+[e = _numCans -> 0 `i ]
+"29
+[; ;data.c: 29: }
+[e :UE 7 ]
+}
+"31
+[; ;data.c: 31: void storeCanisterData(direction facing, float dist, _Bool status, _Bool deposit)
+[v _storeCanisterData `(v ~T0 @X0 1 ef4`E145`f`a`a ]
+"32
+[; ;data.c: 32: {
+{
+[e :U _storeCanisterData ]
+"31
+[; ;data.c: 31: void storeCanisterData(direction facing, float dist, _Bool status, _Bool deposit)
+[v _facing `E145 ~T0 @X0 1 r1 ]
+[v _dist `f ~T0 @X0 1 r2 ]
+[v _status `a ~T0 @X0 1 r3 ]
+[v _deposit `a ~T0 @X0 1 r4 ]
+"32
+[; ;data.c: 32: {
+[f ]
+"33
+[; ;data.c: 33:     numCans++;
+[e ++ _numCans -> -> 1 `i `Vi ]
+"34
+[; ;data.c: 34:     int id = numCans;
+[v _id `i ~T0 @X0 1 a ]
+[e = _id _numCans ]
+"35
+[; ;data.c: 35:     (cans[id-1]).id = id;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 0 _id ]
+"36
+[; ;data.c: 36:     (cans[id-1]).facing = facing;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 1 _facing ]
+"37
+[; ;data.c: 37:     (cans[id-1]).distance = dist;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 2 _dist ]
+"38
+[; ;data.c: 38:     (cans[id-1]).status = status;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 3 _status ]
+"39
+[; ;data.c: 39:     (cans[id-1]).ballDeposited = deposit;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 4 _deposit ]
+"40
+[; ;data.c: 40: }
+[e :UE 11 ]
+}
+"42
+[; ;data.c: 42: void updateCanData(int id, _Bool status, _Bool deposit)
+[v _updateCanData `(v ~T0 @X0 1 ef3`i`a`a ]
+"43
+[; ;data.c: 43: {
+{
+[e :U _updateCanData ]
+"42
+[; ;data.c: 42: void updateCanData(int id, _Bool status, _Bool deposit)
+[v _id `i ~T0 @X0 1 r1 ]
+[v _status `a ~T0 @X0 1 r2 ]
+[v _deposit `a ~T0 @X0 1 r3 ]
+"43
+[; ;data.c: 43: {
+[f ]
+"44
+[; ;data.c: 44:     (cans[id-1]).status = status;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 3 _status ]
+"45
+[; ;data.c: 45:     (cans[id-1]).ballDeposited = deposit;
+[e = . *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux 4 _deposit ]
+"46
+[; ;data.c: 46: }
+[e :UE 12 ]
+}
+"48
+[; ;data.c: 48: canister getData(int id)
+[v _getData `(S6 ~T0 @X0 1 ef1`i ]
+"49
+[; ;data.c: 49: {
+{
+[e :U _getData ]
+"48
+[; ;data.c: 48: canister getData(int id)
+[v _id `i ~T0 @X0 1 r1 ]
+"49
+[; ;data.c: 49: {
+[f ]
+"50
+[; ;data.c: 50:     return cans[id - 1];
+[e ) *U + &U _cans * -> -> - _id -> 1 `i `ui `ux -> -> # *U &U _cans `ui `ux ]
+[e $UE 13  ]
+"51
+[; ;data.c: 51: }
+[e :UE 13 ]
+}
+"53
+[; ;data.c: 53: int getNumCanisters(void)
+[v _getNumCanisters `(i ~T0 @X0 1 ef ]
+"54
+[; ;data.c: 54: {
+{
+[e :U _getNumCanisters ]
+[f ]
+"55
+[; ;data.c: 55:     return numCans;
+[e ) _numCans ]
+[e $UE 14  ]
+"56
+[; ;data.c: 56: }
+[e :UE 14 ]
+}
+"58
+[; ;data.c: 58: int getNumBallsGiven(void)
+[v _getNumBallsGiven `(i ~T0 @X0 1 ef ]
+"59
+[; ;data.c: 59: {
+{
+[e :U _getNumBallsGiven ]
+[f ]
+"70
+[; ;data.c: 70:     return numBalls;
+[e ) _numBalls ]
+[e $UE 15  ]
+"71
+[; ;data.c: 71: }
+[e :UE 15 ]
+}
+"73
+[; ;data.c: 73: void increaseNumBalls(void)
+[v _increaseNumBalls `(v ~T0 @X0 1 ef ]
+"74
+[; ;data.c: 74: {
+{
+[e :U _increaseNumBalls ]
+[f ]
+"75
+[; ;data.c: 75:     numBalls++;
+[e ++ _numBalls -> -> 1 `i `Vi ]
+"76
+[; ;data.c: 76: }
+[e :UE 16 ]
+}

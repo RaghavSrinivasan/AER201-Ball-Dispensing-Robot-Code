@@ -1,0 +1,2779 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"55 ./UART_PIC.h
+[; ;./UART_PIC.h: 55: typedef struct{
+[s S273 `*uc 1 `uc 1 `Vuc 1 `*uc 1 `uc 1 `Vuc 1 `Vuc 1 `Vuc 1 `Vuc 1 `Vuc 1 ]
+[n S273 . _dataTX _numBytesTX _numTransmits _dataRX _numBytesRX _numReceives _stateTX _stateRX _lastReceiveFERR _lastReceiveOERR ]
+[p mainexit ]
+"1835 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1835:     struct {
+[s S65 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S65 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1845
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1845:     struct {
+[s S66 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S66 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"1834
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1834: typedef union {
+[u S64 `S65 1 `S66 1 ]
+[n S64 . . . ]
+"1856
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1856: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS64 ~T0 @X0 0 e@3988 ]
+"1110
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1110:     struct {
+[s S44 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S44 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"1120
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1120:     struct {
+[s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S45 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"1109
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1109: typedef union {
+[u S43 `S44 1 `S45 1 ]
+[n S43 . . . ]
+"1131
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1131: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
+[v _LATCbits `VS43 ~T0 @X0 0 e@3979 ]
+"1613
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1613:     struct {
+[s S59 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S59 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"1623
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1623:     struct {
+[s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S60 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"1612
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1612: typedef union {
+[u S58 `S59 1 `S60 1 ]
+[n S58 . . . ]
+"1634
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1634: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
+[v _TRISBbits `VS58 ~T0 @X0 0 e@3987 ]
+"998
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 998:     struct {
+[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S41 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"1008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1008:     struct {
+[s S42 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S42 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"997
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 997: typedef union {
+[u S40 `S41 1 `S42 1 ]
+[n S40 . . . ]
+"1019
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1019: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
+[v _LATBbits `VS40 ~T0 @X0 0 e@3978 ]
+"26 ./data.h
+[; ;./data.h: 26: void initCanisters(void);
+[v _initCanisters `(v ~T0 @X0 0 ef ]
+"8178 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 8178: extern volatile __bit TMR0ON __attribute__((address(0x7EAF)));
+[v _TMR0ON `Vb ~T0 @X0 0 e@32431 ]
+"8076
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 8076: extern volatile __bit T08BIT __attribute__((address(0x7EAE)));
+[v _T08BIT `Vb ~T0 @X0 0 e@32430 ]
+"8082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 8082: extern volatile __bit T0CS __attribute__((address(0x7EAD)));
+[v _T0CS `Vb ~T0 @X0 0 e@32429 ]
+"8100
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 8100: extern volatile __bit T0SE __attribute__((address(0x7EAC)));
+[v _T0SE `Vb ~T0 @X0 0 e@32428 ]
+"7677
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 7677: extern volatile __bit PSA __attribute__((address(0x7EAB)));
+[v _PSA `Vb ~T0 @X0 0 e@32427 ]
+"5940
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5940: extern volatile unsigned char TMR0L __attribute__((address(0xFD6)));
+[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
+"5947
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5947: extern volatile unsigned char TMR0H __attribute__((address(0xFD7)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
+"8169
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 8169: extern volatile __bit TMR0IE __attribute__((address(0x7F95)));
+[v _TMR0IE `Vb ~T0 @X0 0 e@32661 ]
+"26 ./motion.h
+[; ;./motion.h: 26: void moveRobot(int move);
+[v _moveRobot `(v ~T0 @X0 0 ef1`i ]
+"31 ./sensors.h
+[; ;./sensors.h: 31: int distFromCanister(int sensor);
+[v _distFromCanister `(i ~T0 @X0 0 ef1`i ]
+"36 ./menu.h
+[; ;./menu.h: 36: void initStartScreen(void);
+[v _initStartScreen `(v ~T0 @X0 0 ef ]
+[v F2424 `(v ~T0 @X0 1 tf1`ul ]
+"183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
+[v __delay `JF2424 ~T0 @X0 0 e ]
+[p i __delay ]
+"37 main.c
+[; ;main.c: 37: void testDrive(void);
+[v _testDrive `(v ~T0 @X0 0 ef ]
+"39
+[; ;main.c: 39: void testTurn(int count);
+[v _testTurn `(v ~T0 @X0 0 ef1`i ]
+"40
+[; ;main.c: 40: void setForward(int count);
+[v _setForward `(v ~T0 @X0 0 ef1`i ]
+"34 ./data.h
+[; ;./data.h: 34: int getNumCanisters(void);
+[v _getNumCanisters `(i ~T0 @X0 0 ef ]
+"38 main.c
+[; ;main.c: 38: void testDrive2(void);
+[v _testDrive2 `(v ~T0 @X0 0 ef ]
+"42 ./menu.h
+[; ;./menu.h: 42: void initMenu(void);
+[v _initMenu `(v ~T0 @X0 0 ef ]
+"216 main.c
+[; ;main.c: 216:     direction facing;
+[c E2833 0 1 .. ]
+[n E2833 direction Left Right  ]
+"15 ./data.h
+[; ;./data.h: 15: struct canister{
+[s S272 `i 1 `E2833 1 `f 1 `a 1 `a 1 ]
+[n S272 canister id facing distance status ballDeposited ]
+"33
+[; ;./data.h: 33: canister getData(int id);
+[v _getData `(S272 ~T0 @X0 0 ef1`i ]
+"33 ./sensors.h
+[; ;./sensors.h: 33: int readDigitalSensor(void);
+[v _readDigitalSensor `(i ~T0 @X0 0 ef ]
+"41 main.c
+[; ;main.c: 41: void setBackward(int count);
+[v _setBackward `(v ~T0 @X0 0 ef1`i ]
+"42
+[; ;main.c: 42: void setRight(int count);
+[v _setRight `(v ~T0 @X0 0 ef1`i ]
+"88 ./lcd.h
+[; ;./lcd.h: 88: void lcdInst(char data);
+[v _lcdInst `(v ~T0 @X0 0 ef1`uc ]
+"113 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c99\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"28 ./motion.h
+[; ;./motion.h: 28: _Bool releaseDoor(void);
+[v _releaseDoor `(a ~T0 @X0 0 ef ]
+"36 ./data.h
+[; ;./data.h: 36: void increaseNumBalls(void);
+[v _increaseNumBalls `(v ~T0 @X0 0 ef ]
+"29
+[; ;./data.h: 29: void storeCanisterData(direction facing, float dist, _Bool status, _Bool deposit);
+[v _storeCanisterData `(v ~T0 @X0 0 ef4`E2833`f`a`a ]
+"31
+[; ;./data.h: 31: void updateCanData(int id, _Bool status, _Bool deposit);
+[v _updateCanData `(v ~T0 @X0 0 ef3`i`a`a ]
+"25 ./sensors.h
+[; ;./sensors.h: 25: int shaftEncoderCount(void);
+[v _shaftEncoderCount `(i ~T0 @X0 0 ef ]
+"27
+[; ;./sensors.h: 27: int shaftEncoderCount2(void);
+[v _shaftEncoderCount2 `(i ~T0 @X0 0 ef ]
+"45
+[; ;./sensors.h: 45: float getDistance(void);
+[v _getDistance `(f ~T0 @X0 0 ef ]
+"37
+[; ;./sensors.h: 37: int readFrontSensor(void);
+[v _readFrontSensor `(i ~T0 @X0 0 ef ]
+"39
+[; ;./sensors.h: 39: int readFrontSensor2(void);
+[v _readFrontSensor2 `(i ~T0 @X0 0 ef ]
+"36 ./motion.h
+[; ;./motion.h: 36: void avoidCan(void);
+[v _avoidCan `(v ~T0 @X0 0 ef ]
+"41 ./sensors.h
+[; ;./sensors.h: 41: int readRemoteStart(void);
+[v _readRemoteStart `(i ~T0 @X0 0 ef ]
+"73 ./menu.h
+[; ;./menu.h: 73: void sensorData(int data, int data2);
+[v _sensorData `(v ~T0 @X0 0 ef2`i`i ]
+"72 ./lcd.h
+[; ;./lcd.h: 72: extern const unsigned char LCD_LINE2_ADDR;
+[v _LCD_LINE2_ADDR `Cuc ~T0 @X0 0 e ]
+"73
+[; ;./lcd.h: 73: extern const unsigned char LCD_LINE3_ADDR;
+[v _LCD_LINE3_ADDR `Cuc ~T0 @X0 0 e ]
+"74
+[; ;./lcd.h: 74: extern const unsigned char LCD_LINE4_ADDR;
+[v _LCD_LINE4_ADDR `Cuc ~T0 @X0 0 e ]
+"81 ./menu.h
+[; ;./menu.h: 81: float getTime(void);
+[v _getTime `(f ~T0 @X0 0 ef ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"191
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 191: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"362
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 362: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"537
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 537: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"679
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 679: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"882
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 882: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"994
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 994: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1106
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1106: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1218: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1330: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"1382
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1382: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1387
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1387: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1604
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1604: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1609
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1609: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1826
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1826: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1831
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 1831: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2048
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2048: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2053
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2053: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2270
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2270: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2275
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2275: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"2434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2434: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2499
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2499: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"2576
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2576: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"2653
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2653: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"2730
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2730: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2796
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2796: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2862
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2862: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"2928
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2928: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"2994
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 2994: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3001
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3001: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3008
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3008: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3015
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3015: __asm("EEADRH equ 0FAAh");
+[; <" EEADRH equ 0FAAh ;# ">
+"3022
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3022: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3027
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3027: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3232
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3232: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3237
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3237: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"3488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3488: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"3493
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3493: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"3500
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3500: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"3505
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3505: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"3512
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3512: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"3517
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3517: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3524
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3524: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"3531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3531: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"3643
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3643: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"3650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3650: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"3657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3657: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"3664
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3664: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"3754
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3754: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3833
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3833: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3915
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3915: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"3985
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3985: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"3990
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 3990: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4157
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4157: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4236
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4236: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4243
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4243: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4250
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4250: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4257
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4257: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"4354
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4354: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"4361
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4361: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"4368
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4368: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"4375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4375: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"4446
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4446: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"4531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4531: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"4650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4650: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"4657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4657: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"4664
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4664: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"4671
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4671: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4733
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4733: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4803
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 4803: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5024
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5024: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5031
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5031: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5038
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5038: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5109
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5109: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5114
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5114: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5219
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5219: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5226
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5226: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5329
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5329: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5336
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5336: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"5343
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5343: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"5350
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5350: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"5483
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5483: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"5511
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5511: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"5516
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5516: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"5781
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5781: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"5858
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5858: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"5935
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5935: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"5942
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5942: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"5949
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5949: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"5956
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 5956: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6027
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6027: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6034
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6034: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6041
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6041: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6048
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6048: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6055
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6055: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6062
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6062: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6069
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6069: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6076
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6076: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6083
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6083: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6090
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6090: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6097
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6097: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6104
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6104: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6111
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6111: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6118
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6118: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6125
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6125: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6132
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6132: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6139
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6139: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6146
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6146: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6158
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6158: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6165
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6165: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6172
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6172: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6179
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6179: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6186
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6186: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6193
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6193: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6200
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6200: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6207
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6207: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6214
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6214: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6306
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6306: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"6376
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6376: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"6493
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6493: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"6500
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6500: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"6507
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6507: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"6514
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6514: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"6523
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6523: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"6530
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6530: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6537
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6537: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6544
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6544: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6553
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6553: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"6560
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6560: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"6567
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6567: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"6574
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6574: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"6581
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6581: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"6588
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6588: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"6694
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6694: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"6701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6701: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6708
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6708: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6715
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4620.h: 6715: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"14 .\configbits.h
+[p x OSC = HS ]
+"15
+[p x FCMEN = OFF ]
+"16
+[p x IESO = OFF ]
+"19
+[p x PWRT = OFF ]
+"20
+[p x BOREN = SBORDIS ]
+"21
+[p x BORV = 3 ]
+"24
+[p x WDT = OFF ]
+"25
+[p x WDTPS = 32768 ]
+"28
+[p x CCP2MX = PORTC ]
+"29
+[p x PBADEN = ON ]
+"30
+[p x LPT1OSC = OFF ]
+"31
+[p x MCLRE = ON ]
+"34
+[p x STVREN = ON ]
+"35
+[p x LVP = OFF ]
+"36
+[p x XINST = OFF ]
+"39
+[p x CP0 = OFF ]
+"40
+[p x CP1 = OFF ]
+"41
+[p x CP2 = OFF ]
+"42
+[p x CP3 = OFF ]
+"45
+[p x CPB = OFF ]
+"46
+[p x CPD = ON ]
+"49
+[p x WRT0 = OFF ]
+"50
+[p x WRT1 = OFF ]
+"51
+[p x WRT2 = OFF ]
+"52
+[p x WRT3 = OFF ]
+"55
+[p x WRTC = OFF ]
+"56
+[p x WRTB = OFF ]
+"57
+[p x WRTD = OFF ]
+"60
+[p x EBTR0 = OFF ]
+"61
+[p x EBTR1 = OFF ]
+"62
+[p x EBTR2 = OFF ]
+"63
+[p x EBTR3 = OFF ]
+"66
+[p x EBTRB = OFF ]
+"69 ./UART_PIC.h
+[; ;./UART_PIC.h: 69: volatile unsigned char UARTinterruptState;
+[v _UARTinterruptState `Vuc ~T0 @X0 1 e ]
+"72
+[; ;./UART_PIC.h: 72: unsigned char arr_dataRX[16];
+[v _arr_dataRX `uc ~T0 @X0 -> 16 `i e ]
+"73
+[; ;./UART_PIC.h: 73: UART_t* UART;
+[v _UART `*S273 ~T0 @X0 1 e ]
+"23 main.c
+[; ;main.c: 23: volatile int canID;
+[v _canID `Vi ~T0 @X0 1 e ]
+"24
+[; ;main.c: 24: volatile float lateralDist;
+[v _lateralDist `Vf ~T0 @X0 1 e ]
+"25
+[; ;main.c: 25: volatile float suspendedDist;
+[v _suspendedDist `Vf ~T0 @X0 1 e ]
+"26
+[; ;main.c: 26: volatile float forwardDist;
+[v _forwardDist `Vf ~T0 @X0 1 e ]
+"27
+[; ;main.c: 27: volatile float analog1Ambient;
+[v _analog1Ambient `Vf ~T0 @X0 1 e ]
+"28
+[; ;main.c: 28: volatile float analog2Ambient;
+[v _analog2Ambient `Vf ~T0 @X0 1 e ]
+"29
+[; ;main.c: 29: volatile float analog3Ambient;
+[v _analog3Ambient `Vf ~T0 @X0 1 e ]
+"30
+[; ;main.c: 30: volatile float analog4Ambient;
+[v _analog4Ambient `Vf ~T0 @X0 1 e ]
+"32
+[; ;main.c: 32: char ESPdata[2] = {1, 1};
+[v _ESPdata `uc ~T0 @X0 -> 2 `i e ]
+[i _ESPdata
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+..
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"49
+[; ;main.c: 49: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"53
+[; ;main.c: 53:     _Bool turned = 0;
+[v _turned `a ~T0 @X0 1 a ]
+[e = _turned -> -> 0 `i `a ]
+"54
+[; ;main.c: 54:     _Bool finished = 0;
+[v _finished `a ~T0 @X0 1 a ]
+[e = _finished -> -> 0 `i `a ]
+"55
+[; ;main.c: 55:     unsigned int newCount = 0;
+[v _newCount `ui ~T0 @X0 1 a ]
+[e = _newCount -> -> 0 `i `ui ]
+"56
+[; ;main.c: 56:     unsigned int count[2];
+[v _count `ui ~T0 @X0 -> 2 `i a ]
+"60
+[; ;main.c: 60:     TRISCbits.RC5 = 0;
+[e = . . _TRISCbits 1 5 -> -> 0 `i `uc ]
+"61
+[; ;main.c: 61:     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"64
+[; ;main.c: 64:     TRISBbits.RB3 = 0;
+[e = . . _TRISBbits 1 3 -> -> 0 `i `uc ]
+"65
+[; ;main.c: 65:     LATBbits.LATB3 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"71
+[; ;main.c: 71:     initCanisters();
+[e ( _initCanisters ..  ]
+"73
+[; ;main.c: 73:     TMR0ON = 0;
+[e = _TMR0ON -> -> 0 `i `b ]
+"74
+[; ;main.c: 74:     T08BIT = 0;
+[e = _T08BIT -> -> 0 `i `b ]
+"76
+[; ;main.c: 76:     T0CS = 0;
+[e = _T0CS -> -> 0 `i `b ]
+"77
+[; ;main.c: 77:     T0SE = 0;
+[e = _T0SE -> -> 0 `i `b ]
+"79
+[; ;main.c: 79:     PSA = 1;
+[e = _PSA -> -> 1 `i `b ]
+"81
+[; ;main.c: 81:     TMR0L = 0b00000000;
+[e = _TMR0L -> -> 0 `i `uc ]
+"82
+[; ;main.c: 82:     TMR0H = 0b00000000;
+[e = _TMR0H -> -> 0 `i `uc ]
+"84
+[; ;main.c: 84:     TMR0IE = 1;
+[e = _TMR0IE -> -> 1 `i `b ]
+"86
+[; ;main.c: 86:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"88
+[; ;main.c: 88:     analog1Ambient = distFromCanister(1);
+[e = _analog1Ambient -> ( _distFromCanister (1 -> 1 `i `f ]
+"89
+[; ;main.c: 89:     analog2Ambient = distFromCanister(2);
+[e = _analog2Ambient -> ( _distFromCanister (1 -> 2 `i `f ]
+"90
+[; ;main.c: 90:     analog3Ambient = distFromCanister(7);
+[e = _analog3Ambient -> ( _distFromCanister (1 -> 7 `i `f ]
+"91
+[; ;main.c: 91:     analog4Ambient = distFromCanister(8);
+[e = _analog4Ambient -> ( _distFromCanister (1 -> 8 `i `f ]
+"92
+[; ;main.c: 92:     initStartScreen();
+[e ( _initStartScreen ..  ]
+"100
+[; ;main.c: 100:     TMR0ON = 1;
+[e = _TMR0ON -> -> 1 `i `b ]
+"101
+[; ;main.c: 101:     _delay((unsigned long)((2000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"102
+[; ;main.c: 102:     testDrive();
+[e ( _testDrive ..  ]
+"104
+[; ;main.c: 104:     testTurn(21);
+[e ( _testTurn (1 -> 21 `i ]
+"105
+[; ;main.c: 105:     setForward(48);
+[e ( _setForward (1 -> 48 `i ]
+"106
+[; ;main.c: 106:     testTurn(21);
+[e ( _testTurn (1 -> 21 `i ]
+"107
+[; ;main.c: 107:     turned = 1;
+[e = _turned -> -> 1 `i `a ]
+"108
+[; ;main.c: 108:     canID = getNumCanisters();
+[e = _canID ( _getNumCanisters ..  ]
+"109
+[; ;main.c: 109:     testDrive2();
+[e ( _testDrive2 ..  ]
+"203
+[; ;main.c: 203:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"204
+[; ;main.c: 204:     finished = 1;
+[e = _finished -> -> 1 `i `a ]
+"205
+[; ;main.c: 205:     TMR0ON = 0;
+[e = _TMR0ON -> -> 0 `i `b ]
+"206
+[; ;main.c: 206:     initMenu();
+[e ( _initMenu ..  ]
+"208
+[; ;main.c: 208: }
+[e :UE 274 ]
+}
+"210
+[; ;main.c: 210: void detectCanister(void)
+[v _detectCanister `(v ~T0 @X0 1 ef ]
+"211
+[; ;main.c: 211: {
+{
+[e :U _detectCanister ]
+[f ]
+"212
+[; ;main.c: 212:     int newDist, oldDist;
+[v _newDist `i ~T0 @X0 1 a ]
+[v _oldDist `i ~T0 @X0 1 a ]
+"213
+[; ;main.c: 213:     int dist1, dist2, dist3, dist4, dist5;
+[v _dist1 `i ~T0 @X0 1 a ]
+[v _dist2 `i ~T0 @X0 1 a ]
+[v _dist3 `i ~T0 @X0 1 a ]
+[v _dist4 `i ~T0 @X0 1 a ]
+[v _dist5 `i ~T0 @X0 1 a ]
+"214
+[; ;main.c: 214:     float avgDist = 0;
+[v _avgDist `f ~T0 @X0 1 a ]
+[e = _avgDist -> -> 0 `i `f ]
+"215
+[; ;main.c: 215:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"216
+[; ;main.c: 216:     direction facing;
+[v _facing `E2833 ~T0 @X0 1 a ]
+"217
+[; ;main.c: 217:     float location, oldLocation;
+[v _location `f ~T0 @X0 1 a ]
+[v _oldLocation `f ~T0 @X0 1 a ]
+"218
+[; ;main.c: 218:     canister prevCan;
+[v _prevCan `S272 ~T0 @X0 1 a ]
+"219
+[; ;main.c: 219:     int prevID;
+[v _prevID `i ~T0 @X0 1 a ]
+"220
+[; ;main.c: 220:     int state;
+[v _state `i ~T0 @X0 1 a ]
+"221
+[; ;main.c: 221:     _Bool status, deposited;
+[v _status `a ~T0 @X0 1 a ]
+[v _deposited `a ~T0 @X0 1 a ]
+"222
+[; ;main.c: 222:     _Bool success;
+[v _success `a ~T0 @X0 1 a ]
+"223
+[; ;main.c: 223:     _Bool right = 0;
+[v _right `a ~T0 @X0 1 a ]
+[e = _right -> -> 0 `i `a ]
+"225
+[; ;main.c: 225:     LATBbits.LATB3 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"227
+[; ;main.c: 227:     prevID = getNumCanisters();
+[e = _prevID ( _getNumCanisters ..  ]
+"228
+[; ;main.c: 228:     if (prevID >0)
+[e $ ! > _prevID -> 0 `i 276  ]
+"229
+[; ;main.c: 229:     {
+{
+"230
+[; ;main.c: 230:         prevCan = getData(prevID);
+[e = _prevCan ( _getData (1 _prevID ]
+"231
+[; ;main.c: 231:         oldLocation = prevCan.distance;
+[e = _oldLocation . _prevCan 2 ]
+"232
+[; ;main.c: 232:     }
+}
+[e $U 277  ]
+"233
+[; ;main.c: 233:     else
+[e :U 276 ]
+"234
+[; ;main.c: 234:     {
+{
+"235
+[; ;main.c: 235:         oldLocation = -30;
+[e = _oldLocation -> -U -> 30 `i `f ]
+"236
+[; ;main.c: 236:     }
+}
+[e :U 277 ]
+"258
+[; ;main.c: 258:     location = suspendedDist + 4;
+[e = _location + _suspendedDist -> -> 4 `i `f ]
+"260
+[; ;main.c: 260:     while(readDigitalSensor())
+[e $U 278  ]
+[e :U 279 ]
+"261
+[; ;main.c: 261:     {
+{
+"262
+[; ;main.c: 262:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"263
+[; ;main.c: 263:     }
+}
+[e :U 278 ]
+"260
+[; ;main.c: 260:     while(readDigitalSensor())
+[e $ != ( _readDigitalSensor ..  -> 0 `i 279  ]
+[e :U 280 ]
+"264
+[; ;main.c: 264:     while(!readDigitalSensor())
+[e $U 281  ]
+[e :U 282 ]
+"265
+[; ;main.c: 265:     {
+{
+"266
+[; ;main.c: 266:         moveRobot(2);
+[e ( _moveRobot (1 -> 2 `i ]
+"267
+[; ;main.c: 267:     }
+}
+[e :U 281 ]
+"264
+[; ;main.c: 264:     while(!readDigitalSensor())
+[e $ ! != ( _readDigitalSensor ..  -> 0 `i 282  ]
+[e :U 283 ]
+"268
+[; ;main.c: 268:     setBackward(1);
+[e ( _setBackward (1 -> 1 `i ]
+"270
+[; ;main.c: 270:     dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"271
+[; ;main.c: 271:     dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"272
+[; ;main.c: 272:     dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"273
+[; ;main.c: 273:     if (dist2 > 0 )
+[e $ ! > _dist2 -> 0 `i 284  ]
+"274
+[; ;main.c: 274:     {
+{
+"275
+[; ;main.c: 275:         while ((dist3 > 975)|| (dist3 < 975))
+[e $U 285  ]
+[e :U 286 ]
+"276
+[; ;main.c: 276:         {
+{
+"277
+[; ;main.c: 277:             if ((dist3 > 975))
+[e $ ! > _dist3 -> 975 `i 288  ]
+"278
+[; ;main.c: 278:                 moveRobot(3);
+[e ( _moveRobot (1 -> 3 `i ]
+[e $U 289  ]
+"279
+[; ;main.c: 279:             else if ((dist3 < 975))
+[e :U 288 ]
+[e $ ! < _dist3 -> 975 `i 290  ]
+"280
+[; ;main.c: 280:                 moveRobot(4);
+[e ( _moveRobot (1 -> 4 `i ]
+[e :U 290 ]
+[e :U 289 ]
+"282
+[; ;main.c: 282:             dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"283
+[; ;main.c: 283:             dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"284
+[; ;main.c: 284:         }
+}
+[e :U 285 ]
+"275
+[; ;main.c: 275:         while ((dist3 > 975)|| (dist3 < 975))
+[e $ || > _dist3 -> 975 `i < _dist3 -> 975 `i 286  ]
+[e :U 287 ]
+"285
+[; ;main.c: 285:     }
+}
+[e :U 284 ]
+"287
+[; ;main.c: 287:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"289
+[; ;main.c: 289:     _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"291
+[; ;main.c: 291:     dist1 = distFromCanister(1);
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"293
+[; ;main.c: 293:     dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"295
+[; ;main.c: 295:     dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"296
+[; ;main.c: 296:     dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"297
+[; ;main.c: 297:     if ((dist1 > 700)&&(dist2 > 500)&&(dist4 < 750))
+[e $ ! && && > _dist1 -> 700 `i > _dist2 -> 500 `i < _dist4 -> 750 `i 291  ]
+"298
+[; ;main.c: 298:     {
+{
+"299
+[; ;main.c: 299:         state = 1;
+[e = _state -> 1 `i ]
+"300
+[; ;main.c: 300:     }
+}
+[e $U 292  ]
+"301
+[; ;main.c: 301:     else
+[e :U 291 ]
+"302
+[; ;main.c: 302:     {
+{
+"303
+[; ;main.c: 303:         state = 0;
+[e = _state -> 0 `i ]
+"304
+[; ;main.c: 304:     }
+}
+[e :U 292 ]
+"355
+[; ;main.c: 355:     if (state == 0)
+[e $ ! == _state -> 0 `i 293  ]
+"356
+[; ;main.c: 356:     {
+{
+"358
+[; ;main.c: 358:         facing = 0;
+[e = _facing -> -> 0 `i `E2833 ]
+"359
+[; ;main.c: 359:         deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"360
+[; ;main.c: 360:         status = 0;
+[e = _status -> -> 0 `i `a ]
+"362
+[; ;main.c: 362:     }
+}
+[e $U 294  ]
+"363
+[; ;main.c: 363:     else if (state == 1)
+[e :U 293 ]
+[e $ ! == _state -> 1 `i 295  ]
+"364
+[; ;main.c: 364:     {
+{
+"365
+[; ;main.c: 365:         facing = 1;
+[e = _facing -> -> 1 `i `E2833 ]
+"366
+[; ;main.c: 366:         setRight(5);
+[e ( _setRight (1 -> 5 `i ]
+"367
+[; ;main.c: 367:         if ((location - oldLocation) >= 30)
+[e $ ! >= - _location _oldLocation -> -> 30 `i `f 296  ]
+"368
+[; ;main.c: 368:         {
+{
+"369
+[; ;main.c: 369:             moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"370
+[; ;main.c: 370:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"371
+[; ;main.c: 371:             { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"372
+[; ;main.c: 372:             printf("Depositing Ball");
+[e ( _printf :s 1C ]
+"373
+[; ;main.c: 373:             setForward(7);
+[e ( _setForward (1 -> 7 `i ]
+"374
+[; ;main.c: 374:             moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"375
+[; ;main.c: 375:             success = releaseDoor();
+[e = _success ( _releaseDoor ..  ]
+"376
+[; ;main.c: 376:             _delay((unsigned long)((1000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"377
+[; ;main.c: 377:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"378
+[; ;main.c: 378:             if (success)
+[e $ ! != -> _success `i -> 0 `i 297  ]
+"379
+[; ;main.c: 379:             {
+{
+"380
+[; ;main.c: 380:                 increaseNumBalls();
+[e ( _increaseNumBalls ..  ]
+"381
+[; ;main.c: 381:                 status = 1;
+[e = _status -> -> 1 `i `a ]
+"382
+[; ;main.c: 382:                 deposited = 1;
+[e = _deposited -> -> 1 `i `a ]
+"383
+[; ;main.c: 383:             }
+}
+[e $U 298  ]
+"384
+[; ;main.c: 384:             else
+[e :U 297 ]
+"385
+[; ;main.c: 385:             {
+{
+"386
+[; ;main.c: 386:                 status = 0;
+[e = _status -> -> 0 `i `a ]
+"387
+[; ;main.c: 387:                 deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"388
+[; ;main.c: 388:             }
+}
+[e :U 298 ]
+"389
+[; ;main.c: 389:         }
+}
+[e $U 299  ]
+"390
+[; ;main.c: 390:         else
+[e :U 296 ]
+"391
+[; ;main.c: 391:         {
+{
+"392
+[; ;main.c: 392:             status = 0;
+[e = _status -> -> 0 `i `a ]
+"393
+[; ;main.c: 393:             deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"394
+[; ;main.c: 394:         }
+}
+[e :U 299 ]
+"395
+[; ;main.c: 395:     }
+}
+[e :U 295 ]
+[e :U 294 ]
+"396
+[; ;main.c: 396:     storeCanisterData(facing, location, status, deposited);
+[e ( _storeCanisterData (4 , , , _facing _location _status _deposited ]
+"451
+[; ;main.c: 451:     while(readDigitalSensor())
+[e $U 300  ]
+[e :U 301 ]
+"452
+[; ;main.c: 452:     {
+{
+"453
+[; ;main.c: 453:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"454
+[; ;main.c: 454:     }
+}
+[e :U 300 ]
+"451
+[; ;main.c: 451:     while(readDigitalSensor())
+[e $ != ( _readDigitalSensor ..  -> 0 `i 301  ]
+[e :U 302 ]
+"455
+[; ;main.c: 455:     LATBbits.LATB3 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"456
+[; ;main.c: 456: }
+[e :UE 275 ]
+}
+"458
+[; ;main.c: 458: void detectCanisterTurned(void)
+[v _detectCanisterTurned `(v ~T0 @X0 1 ef ]
+"459
+[; ;main.c: 459: {
+{
+[e :U _detectCanisterTurned ]
+[f ]
+"460
+[; ;main.c: 460:     LATBbits.LATB3 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"462
+[; ;main.c: 462:     canister can;
+[v _can `S272 ~T0 @X0 1 a ]
+"463
+[; ;main.c: 463:     canister prevCan;
+[v _prevCan `S272 ~T0 @X0 1 a ]
+"464
+[; ;main.c: 464:     float prevDist, curDist;
+[v _prevDist `f ~T0 @X0 1 a ]
+[v _curDist `f ~T0 @X0 1 a ]
+"465
+[; ;main.c: 465:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"466
+[; ;main.c: 466:     float avgDist;
+[v _avgDist `f ~T0 @X0 1 a ]
+"467
+[; ;main.c: 467:     _Bool status, deposited;
+[v _status `a ~T0 @X0 1 a ]
+[v _deposited `a ~T0 @X0 1 a ]
+"468
+[; ;main.c: 468:     _Bool success;
+[v _success `a ~T0 @X0 1 a ]
+"469
+[; ;main.c: 469:     int dist1, dist2, dist3, dist4, dist5;
+[v _dist1 `i ~T0 @X0 1 a ]
+[v _dist2 `i ~T0 @X0 1 a ]
+[v _dist3 `i ~T0 @X0 1 a ]
+[v _dist4 `i ~T0 @X0 1 a ]
+[v _dist5 `i ~T0 @X0 1 a ]
+"470
+[; ;main.c: 470:     int state;
+[v _state `i ~T0 @X0 1 a ]
+"472
+[; ;main.c: 472:     can = getData(canID);
+[e = _can ( _getData (1 _canID ]
+"473
+[; ;main.c: 473:     if (canID > 1)
+[e $ ! > _canID -> 1 `i 304  ]
+"474
+[; ;main.c: 474:     {
+{
+"475
+[; ;main.c: 475:         prevCan = getData(canID - 1);
+[e = _prevCan ( _getData (1 - _canID -> 1 `i ]
+"476
+[; ;main.c: 476:         prevDist = (prevCan.distance);
+[e = _prevDist . _prevCan 2 ]
+"477
+[; ;main.c: 477:     }
+}
+[e $U 305  ]
+"478
+[; ;main.c: 478:     else
+[e :U 304 ]
+"479
+[; ;main.c: 479:     {
+{
+"480
+[; ;main.c: 480:         prevDist = -50;
+[e = _prevDist -> -U -> 50 `i `f ]
+"481
+[; ;main.c: 481:     }
+}
+[e :U 305 ]
+"483
+[; ;main.c: 483:     curDist = can.distance;
+[e = _curDist . _can 2 ]
+"485
+[; ;main.c: 485:     while(readDigitalSensor())
+[e $U 306  ]
+[e :U 307 ]
+"486
+[; ;main.c: 486:     {
+{
+"487
+[; ;main.c: 487:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"488
+[; ;main.c: 488:     }
+}
+[e :U 306 ]
+"485
+[; ;main.c: 485:     while(readDigitalSensor())
+[e $ != ( _readDigitalSensor ..  -> 0 `i 307  ]
+[e :U 308 ]
+"489
+[; ;main.c: 489:     while(!readDigitalSensor())
+[e $U 309  ]
+[e :U 310 ]
+"490
+[; ;main.c: 490:     {
+{
+"491
+[; ;main.c: 491:         moveRobot(2);
+[e ( _moveRobot (1 -> 2 `i ]
+"492
+[; ;main.c: 492:     }
+}
+[e :U 309 ]
+"489
+[; ;main.c: 489:     while(!readDigitalSensor())
+[e $ ! != ( _readDigitalSensor ..  -> 0 `i 310  ]
+[e :U 311 ]
+"493
+[; ;main.c: 493:     setBackward(1);
+[e ( _setBackward (1 -> 1 `i ]
+"495
+[; ;main.c: 495:     dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"496
+[; ;main.c: 496:     dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"497
+[; ;main.c: 497:     dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"498
+[; ;main.c: 498:     if (dist2 > 0 )
+[e $ ! > _dist2 -> 0 `i 312  ]
+"499
+[; ;main.c: 499:     {
+{
+"500
+[; ;main.c: 500:         while ((dist3 > 975)|| (dist3 < 975))
+[e $U 313  ]
+[e :U 314 ]
+"501
+[; ;main.c: 501:         {
+{
+"502
+[; ;main.c: 502:             if ((dist3 > 975))
+[e $ ! > _dist3 -> 975 `i 316  ]
+"503
+[; ;main.c: 503:                 moveRobot(3);
+[e ( _moveRobot (1 -> 3 `i ]
+[e $U 317  ]
+"504
+[; ;main.c: 504:             else if ((dist3 < 975))
+[e :U 316 ]
+[e $ ! < _dist3 -> 975 `i 318  ]
+"505
+[; ;main.c: 505:                 moveRobot(4);
+[e ( _moveRobot (1 -> 4 `i ]
+[e :U 318 ]
+[e :U 317 ]
+"507
+[; ;main.c: 507:             dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"508
+[; ;main.c: 508:             dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"509
+[; ;main.c: 509:         }
+}
+[e :U 313 ]
+"500
+[; ;main.c: 500:         while ((dist3 > 975)|| (dist3 < 975))
+[e $ || > _dist3 -> 975 `i < _dist3 -> 975 `i 314  ]
+[e :U 315 ]
+"510
+[; ;main.c: 510:     }
+}
+[e :U 312 ]
+"512
+[; ;main.c: 512:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"514
+[; ;main.c: 514:     _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"516
+[; ;main.c: 516:     dist1 = distFromCanister(1);
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"518
+[; ;main.c: 518:     dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"520
+[; ;main.c: 520:     dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"521
+[; ;main.c: 521:     dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"522
+[; ;main.c: 522:     if ((dist1 > 700)&&(dist2 > 500)&&(dist4 < 750))
+[e $ ! && && > _dist1 -> 700 `i > _dist2 -> 500 `i < _dist4 -> 750 `i 319  ]
+"523
+[; ;main.c: 523:     {
+{
+"524
+[; ;main.c: 524:         state = 1;
+[e = _state -> 1 `i ]
+"525
+[; ;main.c: 525:     }
+}
+[e $U 320  ]
+"526
+[; ;main.c: 526:     else
+[e :U 319 ]
+"527
+[; ;main.c: 527:     {
+{
+"528
+[; ;main.c: 528:         state = 0;
+[e = _state -> 0 `i ]
+"529
+[; ;main.c: 529:     }
+}
+[e :U 320 ]
+"532
+[; ;main.c: 532:     if (state == 0)
+[e $ ! == _state -> 0 `i 321  ]
+"533
+[; ;main.c: 533:     {
+{
+"534
+[; ;main.c: 534:         if (can.facing == 0)
+[e $ ! == -> . _can 1 `ui -> -> 0 `i `ui 322  ]
+"535
+[; ;main.c: 535:         {
+{
+"536
+[; ;main.c: 536:             status = 1;
+[e = _status -> -> 1 `i `a ]
+"537
+[; ;main.c: 537:             deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"538
+[; ;main.c: 538:         }
+}
+[e $U 323  ]
+"539
+[; ;main.c: 539:         else
+[e :U 322 ]
+"540
+[; ;main.c: 540:         {
+{
+"541
+[; ;main.c: 541:             status = can.status;
+[e = _status . _can 3 ]
+"542
+[; ;main.c: 542:             deposited = can.ballDeposited;
+[e = _deposited . _can 4 ]
+"543
+[; ;main.c: 543:         }
+}
+[e :U 323 ]
+"544
+[; ;main.c: 544:     }
+}
+[e $U 324  ]
+"545
+[; ;main.c: 545:     else if (state == 1)
+[e :U 321 ]
+[e $ ! == _state -> 1 `i 325  ]
+"546
+[; ;main.c: 546:     {
+{
+"547
+[; ;main.c: 547:         setRight(5);
+[e ( _setRight (1 -> 5 `i ]
+"548
+[; ;main.c: 548:         if ((curDist - prevDist) >= 30)
+[e $ ! >= - _curDist _prevDist -> -> 30 `i `f 326  ]
+"549
+[; ;main.c: 549:         {
+{
+"550
+[; ;main.c: 550:             setForward(7);
+[e ( _setForward (1 -> 7 `i ]
+"551
+[; ;main.c: 551:             moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"552
+[; ;main.c: 552:             success = releaseDoor();
+[e = _success ( _releaseDoor ..  ]
+"553
+[; ;main.c: 553:             _delay((unsigned long)((1000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"555
+[; ;main.c: 555:             if (success)
+[e $ ! != -> _success `i -> 0 `i 327  ]
+"556
+[; ;main.c: 556:             {
+{
+"557
+[; ;main.c: 557:                 increaseNumBalls();
+[e ( _increaseNumBalls ..  ]
+"558
+[; ;main.c: 558:                 status = 1;
+[e = _status -> -> 1 `i `a ]
+"559
+[; ;main.c: 559:                 deposited = 1;
+[e = _deposited -> -> 1 `i `a ]
+"560
+[; ;main.c: 560:             }
+}
+[e $U 328  ]
+"561
+[; ;main.c: 561:             else
+[e :U 327 ]
+"562
+[; ;main.c: 562:             {
+{
+"563
+[; ;main.c: 563:                 status = 0;
+[e = _status -> -> 0 `i `a ]
+"564
+[; ;main.c: 564:                 deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"565
+[; ;main.c: 565:             }
+}
+[e :U 328 ]
+"566
+[; ;main.c: 566:         }
+}
+[e $U 329  ]
+"567
+[; ;main.c: 567:         else
+[e :U 326 ]
+"568
+[; ;main.c: 568:         {
+{
+"569
+[; ;main.c: 569:             status = 0;
+[e = _status -> -> 0 `i `a ]
+"570
+[; ;main.c: 570:             deposited = 0;
+[e = _deposited -> -> 0 `i `a ]
+"571
+[; ;main.c: 571:         }
+}
+[e :U 329 ]
+"572
+[; ;main.c: 572:     }
+}
+[e :U 325 ]
+[e :U 324 ]
+"573
+[; ;main.c: 573:     updateCanData(canID, status, deposited);
+[e ( _updateCanData (3 , , _canID _status _deposited ]
+"574
+[; ;main.c: 574:     canID--;
+[e -- _canID -> -> 1 `i `Vi ]
+"575
+[; ;main.c: 575:     while(readDigitalSensor())
+[e $U 330  ]
+[e :U 331 ]
+"576
+[; ;main.c: 576:     {
+{
+"577
+[; ;main.c: 577:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"578
+[; ;main.c: 578:     }
+}
+[e :U 330 ]
+"575
+[; ;main.c: 575:     while(readDigitalSensor())
+[e $ != ( _readDigitalSensor ..  -> 0 `i 331  ]
+[e :U 332 ]
+"579
+[; ;main.c: 579:     LATBbits.LATB3 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"580
+[; ;main.c: 580: }
+[e :UE 303 ]
+}
+"582
+[; ;main.c: 582: void testDrive(void)
+[v _testDrive `(v ~T0 @X0 1 ef ]
+"583
+[; ;main.c: 583: {
+{
+[e :U _testDrive ]
+[f ]
+"584
+[; ;main.c: 584:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"585
+[; ;main.c: 585:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"586
+[; ;main.c: 586:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"587
+[; ;main.c: 587:     float newDist = getDistance() - lateralDist;
+[v _newDist `f ~T0 @X0 1 a ]
+[e = _newDist - ( _getDistance ..  _lateralDist ]
+"588
+[; ;main.c: 588:     float dist = newDist;
+[v _dist `f ~T0 @X0 1 a ]
+[e = _dist _newDist ]
+"590
+[; ;main.c: 590:     while ((dist - newDist) <= 415)
+[e $U 334  ]
+[e :U 335 ]
+"591
+[; ;main.c: 591:     {
+{
+"592
+[; ;main.c: 592:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"593
+[; ;main.c: 593:         dist = getDistance() - lateralDist;
+[e = _dist - ( _getDistance ..  _lateralDist ]
+"594
+[; ;main.c: 594:         { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"595
+[; ;main.c: 595:         { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"596
+[; ;main.c: 596:         printf("%.2f", dist);
+[e ( _printf , (. :s 2C -> _dist `d ]
+"603
+[; ;main.c: 603:         if (readDigitalSensor())
+[e $ ! != ( _readDigitalSensor ..  -> 0 `i 337  ]
+"604
+[; ;main.c: 604:         {
+{
+"605
+[; ;main.c: 605:             suspendedDist = getDistance() - lateralDist;
+[e = _suspendedDist - ( _getDistance ..  _lateralDist ]
+"606
+[; ;main.c: 606:             lateralDist -= getDistance();
+[e =- _lateralDist -> ( _getDistance ..  `Vf ]
+"607
+[; ;main.c: 607:             detectCanister();
+[e ( _detectCanister ..  ]
+"608
+[; ;main.c: 608:             lateralDist += getDistance();
+[e =+ _lateralDist -> ( _getDistance ..  `Vf ]
+"609
+[; ;main.c: 609:             lateralDist -= 13;
+[e =- _lateralDist -> -> 13 `i `Vf ]
+"610
+[; ;main.c: 610:         }
+}
+[e :U 337 ]
+"612
+[; ;main.c: 612:         if(readFrontSensor() || readFrontSensor2())
+[e $ ! || != ( _readFrontSensor ..  -> 0 `i != ( _readFrontSensor2 ..  -> 0 `i 338  ]
+"613
+[; ;main.c: 613:         {
+{
+"614
+[; ;main.c: 614:             lateralDist -= getDistance();
+[e =- _lateralDist -> ( _getDistance ..  `Vf ]
+"615
+[; ;main.c: 615:             avoidCan();
+[e ( _avoidCan ..  ]
+"616
+[; ;main.c: 616:             lateralDist += getDistance();
+[e =+ _lateralDist -> ( _getDistance ..  `Vf ]
+"617
+[; ;main.c: 617:         }
+}
+[e :U 338 ]
+"618
+[; ;main.c: 618:         if (readRemoteStart() == 1)
+[e $ ! == ( _readRemoteStart ..  -> 1 `i 339  ]
+"619
+[; ;main.c: 619:         {
+{
+"621
+[; ;main.c: 621:             moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"622
+[; ;main.c: 622:             TMR0ON = 0;
+[e = _TMR0ON -> -> 0 `i `b ]
+"623
+[; ;main.c: 623:             initMenu();
+[e ( _initMenu ..  ]
+"624
+[; ;main.c: 624:         }
+}
+[e :U 339 ]
+"626
+[; ;main.c: 626:     }
+}
+[e :U 334 ]
+"590
+[; ;main.c: 590:     while ((dist - newDist) <= 415)
+[e $ <= - _dist _newDist -> -> 415 `i `f 335  ]
+[e :U 336 ]
+"642
+[; ;main.c: 642: }
+[e :UE 333 ]
+}
+"644
+[; ;main.c: 644: void testDrive2(void)
+[v _testDrive2 `(v ~T0 @X0 1 ef ]
+"645
+[; ;main.c: 645: {
+{
+[e :U _testDrive2 ]
+[f ]
+"646
+[; ;main.c: 646:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"647
+[; ;main.c: 647:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"648
+[; ;main.c: 648:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"649
+[; ;main.c: 649:     float newDist = getDistance() - lateralDist;
+[v _newDist `f ~T0 @X0 1 a ]
+[e = _newDist - ( _getDistance ..  _lateralDist ]
+"650
+[; ;main.c: 650:     float dist = newDist;
+[v _dist `f ~T0 @X0 1 a ]
+[e = _dist _newDist ]
+"651
+[; ;main.c: 651:     while ((dist - newDist) <= 430)
+[e $U 341  ]
+[e :U 342 ]
+"652
+[; ;main.c: 652:     {
+{
+"653
+[; ;main.c: 653:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"654
+[; ;main.c: 654:         dist = getDistance() - lateralDist;
+[e = _dist - ( _getDistance ..  _lateralDist ]
+"661
+[; ;main.c: 661:         { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"662
+[; ;main.c: 662:         { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"663
+[; ;main.c: 663:         printf("%.2f", dist);
+[e ( _printf , (. :s 3C -> _dist `d ]
+"664
+[; ;main.c: 664:         if (readDigitalSensor())
+[e $ ! != ( _readDigitalSensor ..  -> 0 `i 344  ]
+"665
+[; ;main.c: 665:         {
+{
+"666
+[; ;main.c: 666:             lateralDist -= getDistance();
+[e =- _lateralDist -> ( _getDistance ..  `Vf ]
+"667
+[; ;main.c: 667:             detectCanisterTurned();
+[e ( _detectCanisterTurned ..  ]
+"668
+[; ;main.c: 668:             lateralDist += getDistance();
+[e =+ _lateralDist -> ( _getDistance ..  `Vf ]
+"669
+[; ;main.c: 669:             lateralDist -= 13;
+[e =- _lateralDist -> -> 13 `i `Vf ]
+"670
+[; ;main.c: 670:         }
+}
+[e :U 344 ]
+"672
+[; ;main.c: 672:         if(readFrontSensor() || readFrontSensor2())
+[e $ ! || != ( _readFrontSensor ..  -> 0 `i != ( _readFrontSensor2 ..  -> 0 `i 345  ]
+"673
+[; ;main.c: 673:         {
+{
+"674
+[; ;main.c: 674:             lateralDist -= getDistance();
+[e =- _lateralDist -> ( _getDistance ..  `Vf ]
+"675
+[; ;main.c: 675:             avoidCan();
+[e ( _avoidCan ..  ]
+"676
+[; ;main.c: 676:             lateralDist += getDistance();
+[e =+ _lateralDist -> ( _getDistance ..  `Vf ]
+"677
+[; ;main.c: 677:         }
+}
+[e :U 345 ]
+"678
+[; ;main.c: 678:         if (readRemoteStart() == 1)
+[e $ ! == ( _readRemoteStart ..  -> 1 `i 346  ]
+"679
+[; ;main.c: 679:         {
+{
+"681
+[; ;main.c: 681:             moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"682
+[; ;main.c: 682:             TMR0ON = 0;
+[e = _TMR0ON -> -> 0 `i `b ]
+"683
+[; ;main.c: 683:             initMenu();
+[e ( _initMenu ..  ]
+"684
+[; ;main.c: 684:         }
+}
+[e :U 346 ]
+"685
+[; ;main.c: 685:     }
+}
+[e :U 341 ]
+"651
+[; ;main.c: 651:     while ((dist - newDist) <= 430)
+[e $ <= - _dist _newDist -> -> 430 `i `f 342  ]
+[e :U 343 ]
+"686
+[; ;main.c: 686: }
+[e :UE 340 ]
+}
+"688
+[; ;main.c: 688: void testTurn(int count)
+[v _testTurn `(v ~T0 @X0 1 ef1`i ]
+"689
+[; ;main.c: 689: {
+{
+[e :U _testTurn ]
+"688
+[; ;main.c: 688: void testTurn(int count)
+[v _count `i ~T0 @X0 1 r1 ]
+"689
+[; ;main.c: 689: {
+[f ]
+"690
+[; ;main.c: 690:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"691
+[; ;main.c: 691:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"692
+[; ;main.c: 692:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"693
+[; ;main.c: 693:     while ((shaftCount - newCount) <= count)
+[e $U 348  ]
+[e :U 349 ]
+"694
+[; ;main.c: 694:     {
+{
+"695
+[; ;main.c: 695:         moveRobot(5);
+[e ( _moveRobot (1 -> 5 `i ]
+"696
+[; ;main.c: 696:         shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"697
+[; ;main.c: 697:         shaftCount2 = shaftEncoderCount2();
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"698
+[; ;main.c: 698:         sensorData(shaftCount, shaftCount2);
+[e ( _sensorData (2 , -> _shaftCount `i -> _shaftCount2 `i ]
+"700
+[; ;main.c: 700:     }
+}
+[e :U 348 ]
+"693
+[; ;main.c: 693:     while ((shaftCount - newCount) <= count)
+[e $ <= - _shaftCount -> _newCount `ui -> _count `ui 349  ]
+[e :U 350 ]
+"713
+[; ;main.c: 713: }
+[e :UE 347 ]
+}
+"715
+[; ;main.c: 715: void setForward(int count)
+[v _setForward `(v ~T0 @X0 1 ef1`i ]
+"716
+[; ;main.c: 716: {
+{
+[e :U _setForward ]
+"715
+[; ;main.c: 715: void setForward(int count)
+[v _count `i ~T0 @X0 1 r1 ]
+"716
+[; ;main.c: 716: {
+[f ]
+"717
+[; ;main.c: 717:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"718
+[; ;main.c: 718:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"719
+[; ;main.c: 719:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"720
+[; ;main.c: 720:     while ((shaftCount - newCount) <= count)
+[e $U 352  ]
+[e :U 353 ]
+"721
+[; ;main.c: 721:     {
+{
+"722
+[; ;main.c: 722:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"723
+[; ;main.c: 723:         shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"724
+[; ;main.c: 724:         shaftCount2 = shaftEncoderCount2();
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"725
+[; ;main.c: 725:         sensorData(shaftCount, shaftCount2);
+[e ( _sensorData (2 , -> _shaftCount `i -> _shaftCount2 `i ]
+"727
+[; ;main.c: 727:     }
+}
+[e :U 352 ]
+"720
+[; ;main.c: 720:     while ((shaftCount - newCount) <= count)
+[e $ <= - _shaftCount -> _newCount `ui -> _count `ui 353  ]
+[e :U 354 ]
+"740
+[; ;main.c: 740: }
+[e :UE 351 ]
+}
+"742
+[; ;main.c: 742: void setBackward(int count)
+[v _setBackward `(v ~T0 @X0 1 ef1`i ]
+"743
+[; ;main.c: 743: {
+{
+[e :U _setBackward ]
+"742
+[; ;main.c: 742: void setBackward(int count)
+[v _count `i ~T0 @X0 1 r1 ]
+"743
+[; ;main.c: 743: {
+[f ]
+"744
+[; ;main.c: 744:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"745
+[; ;main.c: 745:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"746
+[; ;main.c: 746:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"747
+[; ;main.c: 747:     while ((shaftCount - newCount) <= count)
+[e $U 356  ]
+[e :U 357 ]
+"748
+[; ;main.c: 748:     {
+{
+"749
+[; ;main.c: 749:         moveRobot(2);
+[e ( _moveRobot (1 -> 2 `i ]
+"750
+[; ;main.c: 750:         shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"751
+[; ;main.c: 751:         shaftCount2 = shaftEncoderCount2();
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"752
+[; ;main.c: 752:         sensorData(shaftCount, shaftCount2);
+[e ( _sensorData (2 , -> _shaftCount `i -> _shaftCount2 `i ]
+"754
+[; ;main.c: 754:     }
+}
+[e :U 356 ]
+"747
+[; ;main.c: 747:     while ((shaftCount - newCount) <= count)
+[e $ <= - _shaftCount -> _newCount `ui -> _count `ui 357  ]
+[e :U 358 ]
+"767
+[; ;main.c: 767: }
+[e :UE 355 ]
+}
+"769
+[; ;main.c: 769: void setRight(int count)
+[v _setRight `(v ~T0 @X0 1 ef1`i ]
+"770
+[; ;main.c: 770: {
+{
+[e :U _setRight ]
+"769
+[; ;main.c: 769: void setRight(int count)
+[v _count `i ~T0 @X0 1 r1 ]
+"770
+[; ;main.c: 770: {
+[f ]
+"771
+[; ;main.c: 771:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"772
+[; ;main.c: 772:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"773
+[; ;main.c: 773:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"774
+[; ;main.c: 774:     while ((shaftCount - newCount) <= count)
+[e $U 360  ]
+[e :U 361 ]
+"775
+[; ;main.c: 775:     {
+{
+"776
+[; ;main.c: 776:         moveRobot(4);
+[e ( _moveRobot (1 -> 4 `i ]
+"777
+[; ;main.c: 777:         shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"778
+[; ;main.c: 778:         shaftCount2 = shaftEncoderCount2();
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"779
+[; ;main.c: 779:         sensorData(shaftCount, shaftCount2);
+[e ( _sensorData (2 , -> _shaftCount `i -> _shaftCount2 `i ]
+"781
+[; ;main.c: 781:     }
+}
+[e :U 360 ]
+"774
+[; ;main.c: 774:     while ((shaftCount - newCount) <= count)
+[e $ <= - _shaftCount -> _newCount `ui -> _count `ui 361  ]
+[e :U 362 ]
+"794
+[; ;main.c: 794: }
+[e :UE 359 ]
+}
+"796
+[; ;main.c: 796: void dispSensors(void)
+[v _dispSensors `(v ~T0 @X0 1 ef ]
+"797
+[; ;main.c: 797: {
+{
+[e :U _dispSensors ]
+[f ]
+"798
+[; ;main.c: 798:     int dist1,dist2,dist3,dist4,dist5;
+[v _dist1 `i ~T0 @X0 1 a ]
+[v _dist2 `i ~T0 @X0 1 a ]
+[v _dist3 `i ~T0 @X0 1 a ]
+[v _dist4 `i ~T0 @X0 1 a ]
+[v _dist5 `i ~T0 @X0 1 a ]
+"799
+[; ;main.c: 799:     int digDist;
+[v _digDist `i ~T0 @X0 1 a ]
+"800
+[; ;main.c: 800:     { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"801
+[; ;main.c: 801:     while (1){
+[e :U 365 ]
+{
+"802
+[; ;main.c: 802:         dist1 = distFromCanister(1);
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"803
+[; ;main.c: 803:         dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"804
+[; ;main.c: 804:         dist3 = distFromCanister(7);
+[e = _dist3 ( _distFromCanister (1 -> 7 `i ]
+"805
+[; ;main.c: 805:         dist4 = distFromCanister(8);
+[e = _dist4 ( _distFromCanister (1 -> 8 `i ]
+"806
+[; ;main.c: 806:         dist5 = readRemoteStart();
+[e = _dist5 ( _readRemoteStart ..  ]
+"808
+[; ;main.c: 808:         digDist = readDigitalSensor();
+[e = _digDist ( _readDigitalSensor ..  ]
+"809
+[; ;main.c: 809:         { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"810
+[; ;main.c: 810:         printf("1:%d 2:%d", dist1, dist2);
+[e ( _printf , , (. :s 4C _dist1 _dist2 ]
+"811
+[; ;main.c: 811:         { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"812
+[; ;main.c: 812:         printf("3:%d 4:%d", dist3,dist4);
+[e ( _printf , , (. :s 5C _dist3 _dist4 ]
+"813
+[; ;main.c: 813:         { lcdInst(0x80 | LCD_LINE3_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE3_ADDR `i `uc ]
+}
+"814
+[; ;main.c: 814:         printf("D:%d", digDist);
+[e ( _printf , (. :s 6C _digDist ]
+"815
+[; ;main.c: 815:         { lcdInst(0x80 | LCD_LINE4_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE4_ADDR `i `uc ]
+}
+"816
+[; ;main.c: 816:         printf("5:%d", dist5);
+[e ( _printf , (. :s 7C _dist5 ]
+"817
+[; ;main.c: 817:         _delay((unsigned long)((200)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"818
+[; ;main.c: 818:         { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"819
+[; ;main.c: 819:     }
+}
+[e :U 364 ]
+[e $U 365  ]
+[e :U 366 ]
+"820
+[; ;main.c: 820:     while (1){
+[e :U 368 ]
+{
+"821
+[; ;main.c: 821:     { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"822
+[; ;main.c: 822:     printf("HI");
+[e ( _printf :s 8C ]
+"823
+[; ;main.c: 823:     }
+}
+[e :U 367 ]
+[e $U 368  ]
+[e :U 369 ]
+"824
+[; ;main.c: 824: }
+[e :UE 363 ]
+}
+"826
+[; ;main.c: 826: void dispSensors2(void)
+[v _dispSensors2 `(v ~T0 @X0 1 ef ]
+"827
+[; ;main.c: 827: {
+{
+[e :U _dispSensors2 ]
+[f ]
+"828
+[; ;main.c: 828:     int oldDist;
+[v _oldDist `i ~T0 @X0 1 a ]
+"829
+[; ;main.c: 829:     int newDist;
+[v _newDist `i ~T0 @X0 1 a ]
+"830
+[; ;main.c: 830:     int digDist;
+[v _digDist `i ~T0 @X0 1 a ]
+"831
+[; ;main.c: 831:     oldDist = distFromCanister(1);
+[e = _oldDist ( _distFromCanister (1 -> 1 `i ]
+"832
+[; ;main.c: 832:     newDist = distFromCanister(2);
+[e = _newDist ( _distFromCanister (1 -> 2 `i ]
+"835
+[; ;main.c: 835:     digDist = readDigitalSensor();
+[e = _digDist ( _readDigitalSensor ..  ]
+"836
+[; ;main.c: 836:     sensorData(oldDist, newDist);
+[e ( _sensorData (2 , _oldDist _newDist ]
+"837
+[; ;main.c: 837:     { lcdInst(0x80 | LCD_LINE3_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE3_ADDR `i `uc ]
+}
+"838
+[; ;main.c: 838:     printf("Digital: %d", digDist);
+[e ( _printf , (. :s 9C _digDist ]
+"839
+[; ;main.c: 839:     _delay((unsigned long)((1000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"840
+[; ;main.c: 840:     { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"841
+[; ;main.c: 841: }
+[e :UE 370 ]
+}
+"843
+[; ;main.c: 843: void printState(void)
+[v _printState `(v ~T0 @X0 1 ef ]
+"844
+[; ;main.c: 844: {
+{
+[e :U _printState ]
+[f ]
+"845
+[; ;main.c: 845:     int dist1, dist2;
+[v _dist1 `i ~T0 @X0 1 a ]
+[v _dist2 `i ~T0 @X0 1 a ]
+"846
+[; ;main.c: 846:     long int oldDigDist, newDigDist;
+[v _oldDigDist `l ~T0 @X0 1 a ]
+[v _newDigDist `l ~T0 @X0 1 a ]
+"847
+[; ;main.c: 847:     float avgDist1 = distFromCanister(1);
+[v _avgDist1 `f ~T0 @X0 1 a ]
+[e = _avgDist1 -> ( _distFromCanister (1 -> 1 `i `f ]
+"848
+[; ;main.c: 848:     float avgDist2 = distFromCanister(2);
+[v _avgDist2 `f ~T0 @X0 1 a ]
+[e = _avgDist2 -> ( _distFromCanister (1 -> 2 `i `f ]
+"849
+[; ;main.c: 849:     float startTime = getTime();
+[v _startTime `f ~T0 @X0 1 a ]
+[e = _startTime ( _getTime ..  ]
+"850
+[; ;main.c: 850:     oldDigDist = readDigitalSensor();
+[e = _oldDigDist -> ( _readDigitalSensor ..  `l ]
+"851
+[; ;main.c: 851:     while (1)
+[e :U 373 ]
+"852
+[; ;main.c: 852:     {
+{
+"853
+[; ;main.c: 853:         newDigDist = readDigitalSensor();
+[e = _newDigDist -> ( _readDigitalSensor ..  `l ]
+"854
+[; ;main.c: 854:         if (newDigDist != oldDigDist)
+[e $ ! != _newDigDist _oldDigDist 375  ]
+"855
+[; ;main.c: 855:         {
+{
+"856
+[; ;main.c: 856:             break;
+[e $U 374  ]
+"857
+[; ;main.c: 857:         }
+}
+[e :U 375 ]
+"858
+[; ;main.c: 858:         if ((getTime() - startTime) > 0.1)
+[e $ ! > -> - ( _getTime ..  _startTime `d .0.1 376  ]
+"859
+[; ;main.c: 859:         {
+{
+"860
+[; ;main.c: 860:             dist1 = distFromCanister(1);
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"861
+[; ;main.c: 861:             dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"862
+[; ;main.c: 862:             avgDist1 = (avgDist1 + dist1)/(2.0);
+[e = _avgDist1 -> / -> + _avgDist1 -> _dist1 `f `d .2.0 `f ]
+"863
+[; ;main.c: 863:             avgDist2 = (avgDist2 + dist2)/(2.0);
+[e = _avgDist2 -> / -> + _avgDist2 -> _dist2 `f `d .2.0 `f ]
+"864
+[; ;main.c: 864:             startTime = getTime();
+[e = _startTime ( _getTime ..  ]
+"865
+[; ;main.c: 865:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"866
+[; ;main.c: 866:             { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));}
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"867
+[; ;main.c: 867:             printf("Dist1: %.2f", avgDist1);
+[e ( _printf , (. :s 10C -> _avgDist1 `d ]
+"868
+[; ;main.c: 868:             { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"869
+[; ;main.c: 869:             printf("Dist2: %.2f", avgDist2);
+[e ( _printf , (. :s 11C -> _avgDist2 `d ]
+"870
+[; ;main.c: 870:         }
+}
+[e :U 376 ]
+"871
+[; ;main.c: 871:     }
+}
+[e :U 372 ]
+[e $U 373  ]
+[e :U 374 ]
+"873
+[; ;main.c: 873:     while(1)
+[e :U 378 ]
+"874
+[; ;main.c: 874:     {
+{
+"875
+[; ;main.c: 875:         { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"876
+[; ;main.c: 876:         { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"877
+[; ;main.c: 877:         printf("Dist1: %.2f", avgDist1);
+[e ( _printf , (. :s 12C -> _avgDist1 `d ]
+"878
+[; ;main.c: 878:         { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"879
+[; ;main.c: 879:         printf("Dist2: %.2f", avgDist2);
+[e ( _printf , (. :s 13C -> _avgDist2 `d ]
+"880
+[; ;main.c: 880:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"881
+[; ;main.c: 881:     }
+}
+[e :U 377 ]
+[e $U 378  ]
+[e :U 379 ]
+"883
+[; ;main.c: 883: }
+[e :UE 371 ]
+}
+"885
+[; ;main.c: 885: void adjustCanister(void)
+[v _adjustCanister `(v ~T0 @X0 1 ef ]
+"886
+[; ;main.c: 886: {
+{
+[e :U _adjustCanister ]
+[f ]
+"887
+[; ;main.c: 887:     int dist1 = distFromCanister(1);
+[v _dist1 `i ~T0 @X0 1 a ]
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"888
+[; ;main.c: 888:     int dist2;
+[v _dist2 `i ~T0 @X0 1 a ]
+"889
+[; ;main.c: 889:     int diff;
+[v _diff `i ~T0 @X0 1 a ]
+"890
+[; ;main.c: 890:     float ratio;
+[v _ratio `f ~T0 @X0 1 a ]
+"891
+[; ;main.c: 891:     while (dist1 > 650 || (readDigitalSensor()))
+[e $U 381  ]
+[e :U 382 ]
+"892
+[; ;main.c: 892:     {
+{
+"894
+[; ;main.c: 894:         dist1 = distFromCanister(1);
+[e = _dist1 ( _distFromCanister (1 -> 1 `i ]
+"895
+[; ;main.c: 895:         dispSensors2();
+[e ( _dispSensors2 ..  ]
+"896
+[; ;main.c: 896:     }
+}
+[e :U 381 ]
+"891
+[; ;main.c: 891:     while (dist1 > 650 || (readDigitalSensor()))
+[e $ || > _dist1 -> 650 `i != ( _readDigitalSensor ..  -> 0 `i 382  ]
+[e :U 383 ]
+"898
+[; ;main.c: 898:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"900
+[; ;main.c: 900:     dist2 = distFromCanister(2);
+[e = _dist2 ( _distFromCanister (1 -> 2 `i ]
+"901
+[; ;main.c: 901:     ratio = (dist2*1.0)/(dist1);
+[e = _ratio -> / * -> _dist2 `d .1.0 -> _dist1 `d `f ]
+"903
+[; ;main.c: 903:     if (dist2 > dist1)
+[e $ ! > _dist2 _dist1 384  ]
+"904
+[; ;main.c: 904:     {
+{
+"905
+[; ;main.c: 905:         while(1)
+[e :U 386 ]
+"906
+[; ;main.c: 906:         {
+{
+"907
+[; ;main.c: 907:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"908
+[; ;main.c: 908:             { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"909
+[; ;main.c: 909:             printf("Front of Can");
+[e ( _printf :s 14C ]
+"910
+[; ;main.c: 910:             { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"911
+[; ;main.c: 911:             printf("Dist1: %d", dist1);
+[e ( _printf , (. :s 15C _dist1 ]
+"912
+[; ;main.c: 912:             { lcdInst(0x80 | LCD_LINE3_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE3_ADDR `i `uc ]
+}
+"913
+[; ;main.c: 913:             printf("Dist2: %d", dist2);
+[e ( _printf , (. :s 16C _dist2 ]
+"914
+[; ;main.c: 914:             { lcdInst(0x80 | LCD_LINE4_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE4_ADDR `i `uc ]
+}
+"915
+[; ;main.c: 915:             printf("Digital: %d", readDigitalSensor());
+[e ( _printf , (. :s 17C ( _readDigitalSensor ..  ]
+"916
+[; ;main.c: 916:             _delay((unsigned long)((100)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"917
+[; ;main.c: 917:         }
+}
+[e :U 385 ]
+[e $U 386  ]
+[e :U 387 ]
+"918
+[; ;main.c: 918:     }
+}
+[e $U 388  ]
+"919
+[; ;main.c: 919:     else if (ratio < 0.8)
+[e :U 384 ]
+[e $ ! < -> _ratio `d .0.8 389  ]
+"920
+[; ;main.c: 920:     {
+{
+"921
+[; ;main.c: 921:         while(1)
+[e :U 391 ]
+"922
+[; ;main.c: 922:         {
+{
+"923
+[; ;main.c: 923:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"924
+[; ;main.c: 924:             { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"925
+[; ;main.c: 925:             printf("Ball");
+[e ( _printf :s 18C ]
+"926
+[; ;main.c: 926:             { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"927
+[; ;main.c: 927:             printf("Dist1: %d", dist1);
+[e ( _printf , (. :s 19C _dist1 ]
+"928
+[; ;main.c: 928:             { lcdInst(0x80 | LCD_LINE3_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE3_ADDR `i `uc ]
+}
+"929
+[; ;main.c: 929:             printf("Dist2: %d", dist2);
+[e ( _printf , (. :s 20C _dist2 ]
+"930
+[; ;main.c: 930:             { lcdInst(0x80 | LCD_LINE4_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE4_ADDR `i `uc ]
+}
+"931
+[; ;main.c: 931:             printf("Digital: %d", readDigitalSensor());
+[e ( _printf , (. :s 21C ( _readDigitalSensor ..  ]
+"932
+[; ;main.c: 932:             _delay((unsigned long)((100)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"933
+[; ;main.c: 933:         }
+}
+[e :U 390 ]
+[e $U 391  ]
+[e :U 392 ]
+"934
+[; ;main.c: 934:     }
+}
+[e $U 393  ]
+"935
+[; ;main.c: 935:     else
+[e :U 389 ]
+"936
+[; ;main.c: 936:     {
+{
+"937
+[; ;main.c: 937:         while(1)
+[e :U 395 ]
+"938
+[; ;main.c: 938:         {
+{
+"939
+[; ;main.c: 939:             { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"940
+[; ;main.c: 940:             { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"941
+[; ;main.c: 941:             printf("Back");
+[e ( _printf :s 22C ]
+"942
+[; ;main.c: 942:             { lcdInst(0x80 | LCD_LINE2_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE2_ADDR `i `uc ]
+}
+"943
+[; ;main.c: 943:             printf("Dist1: %d", dist1);
+[e ( _printf , (. :s 23C _dist1 ]
+"944
+[; ;main.c: 944:             { lcdInst(0x80 | LCD_LINE3_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE3_ADDR `i `uc ]
+}
+"945
+[; ;main.c: 945:             printf("Dist2: %d", dist2);
+[e ( _printf , (. :s 24C _dist2 ]
+"946
+[; ;main.c: 946:             { lcdInst(0x80 | LCD_LINE4_ADDR);};
+{
+[e ( _lcdInst (1 -> | -> 128 `i -> _LCD_LINE4_ADDR `i `uc ]
+}
+"947
+[; ;main.c: 947:             printf("Digital: %d", readDigitalSensor());
+[e ( _printf , (. :s 25C ( _readDigitalSensor ..  ]
+"948
+[; ;main.c: 948:             _delay((unsigned long)((100)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"949
+[; ;main.c: 949:         }
+}
+[e :U 394 ]
+[e $U 395  ]
+[e :U 396 ]
+"950
+[; ;main.c: 950:     }
+}
+[e :U 393 ]
+[e :U 388 ]
+"953
+[; ;main.c: 953: }
+[e :UE 380 ]
+}
+"969
+[; ;main.c: 969: void testShaftEncoder(void)
+[v _testShaftEncoder `(v ~T0 @X0 1 ef ]
+"970
+[; ;main.c: 970: {
+{
+[e :U _testShaftEncoder ]
+[f ]
+"971
+[; ;main.c: 971:     unsigned int shaftCount = shaftEncoderCount();
+[v _shaftCount `ui ~T0 @X0 1 a ]
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"972
+[; ;main.c: 972:     int newCount = shaftCount;
+[v _newCount `i ~T0 @X0 1 a ]
+[e = _newCount -> _shaftCount `i ]
+"973
+[; ;main.c: 973:     unsigned int shaftCount2 = shaftEncoderCount2();
+[v _shaftCount2 `ui ~T0 @X0 1 a ]
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"974
+[; ;main.c: 974:     float newDist = getDistance();
+[v _newDist `f ~T0 @X0 1 a ]
+[e = _newDist ( _getDistance ..  ]
+"975
+[; ;main.c: 975:     float dist = newDist;
+[v _dist `f ~T0 @X0 1 a ]
+[e = _dist _newDist ]
+"976
+[; ;main.c: 976:     while ((shaftCount - newCount) <= 300)
+[e $U 398  ]
+[e :U 399 ]
+"977
+[; ;main.c: 977:     {
+{
+"978
+[; ;main.c: 978:         moveRobot(1);
+[e ( _moveRobot (1 -> 1 `i ]
+"979
+[; ;main.c: 979:         shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"981
+[; ;main.c: 981:         shaftCount2 = shaftEncoderCount2();
+[e = _shaftCount2 -> ( _shaftEncoderCount2 ..  `ui ]
+"982
+[; ;main.c: 982:         sensorData(shaftCount, shaftCount2);
+[e ( _sensorData (2 , -> _shaftCount `i -> _shaftCount2 `i ]
+"985
+[; ;main.c: 985:     }
+}
+[e :U 398 ]
+"976
+[; ;main.c: 976:     while ((shaftCount - newCount) <= 300)
+[e $ <= - _shaftCount -> _newCount `ui -> -> 300 `i `ui 399  ]
+[e :U 400 ]
+"986
+[; ;main.c: 986:     moveRobot(0);
+[e ( _moveRobot (1 -> 0 `i ]
+"987
+[; ;main.c: 987:     shaftCount = shaftEncoderCount();
+[e = _shaftCount -> ( _shaftEncoderCount ..  `ui ]
+"988
+[; ;main.c: 988:     while (1)
+[e :U 402 ]
+"989
+[; ;main.c: 989:     {
+{
+"990
+[; ;main.c: 990:         { lcdInst(0x01); _delay((unsigned long)((5)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 1 `i `uc ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"991
+[; ;main.c: 991:         { lcdInst(0x80); _delay((unsigned long)((2)*(10000000/4000.0)));};
+{
+[e ( _lcdInst (1 -> -> 128 `i `uc ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+}
+"992
+[; ;main.c: 992:         printf("%d", shaftCount);
+[e ( _printf , (. :s 26C _shaftCount ]
+"993
+[; ;main.c: 993:         _delay((unsigned long)((1000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"994
+[; ;main.c: 994:     }
+}
+[e :U 401 ]
+[e $U 402  ]
+[e :U 403 ]
+"995
+[; ;main.c: 995: }
+[e :UE 397 ]
+}
+[p f _printf 8462464 ]
+[a 14C 70 114 111 110 116 32 111 102 32 67 97 110 0 ]
+[a 1C 68 101 112 111 115 105 116 105 110 103 32 66 97 108 108 0 ]
+[a 18C 66 97 108 108 0 ]
+[a 22C 66 97 99 107 0 ]
+[a 11C 68 105 115 116 50 58 32 37 46 50 102 0 ]
+[a 13C 68 105 115 116 50 58 32 37 46 50 102 0 ]
+[a 10C 68 105 115 116 49 58 32 37 46 50 102 0 ]
+[a 12C 68 105 115 116 49 58 32 37 46 50 102 0 ]
+[a 2C 37 46 50 102 0 ]
+[a 3C 37 46 50 102 0 ]
+[a 6C 68 58 37 100 0 ]
+[a 7C 53 58 37 100 0 ]
+[a 5C 51 58 37 100 32 52 58 37 100 0 ]
+[a 4C 49 58 37 100 32 50 58 37 100 0 ]
+[a 9C 68 105 103 105 116 97 108 58 32 37 100 0 ]
+[a 17C 68 105 103 105 116 97 108 58 32 37 100 0 ]
+[a 21C 68 105 103 105 116 97 108 58 32 37 100 0 ]
+[a 25C 68 105 103 105 116 97 108 58 32 37 100 0 ]
+[a 16C 68 105 115 116 50 58 32 37 100 0 ]
+[a 20C 68 105 115 116 50 58 32 37 100 0 ]
+[a 24C 68 105 115 116 50 58 32 37 100 0 ]
+[a 15C 68 105 115 116 49 58 32 37 100 0 ]
+[a 19C 68 105 115 116 49 58 32 37 100 0 ]
+[a 23C 68 105 115 116 49 58 32 37 100 0 ]
+[a 26C 37 100 0 ]
+[a 8C 72 73 0 ]
